@@ -72,10 +72,15 @@ class SkillMatcher
 end
 
 if __FILE__ == $0
-    matcher = SkillMatcher.new
-    matcher.add_skills_to_human("Dimitris")
-    matcher.add_skills_to_human("Marios",["Dotnet"])
-    matcher.add_skills_to_human("Dimitris", ["Ruby"])
+  require 'yaml'
 
-    puts matcher.humans
+  SKILLS_FILE = "skills.yaml"
+
+  if File.file?(SKILLS_FILE)
+    matcher = SkillMatcher.new
+    matcher.humans = YAML.load_file(SKILLS_FILE)
+    puts matcher.pairs
+  else
+    puts "File '#{SKILLS_FILE}' could not be foudn"
+  end
 end

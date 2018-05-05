@@ -1,14 +1,14 @@
 # Skill Matcher
 
-This is a Ruby application which can be used to create pair for pair programming during an event.
+This is a Ruby application which can be used to create pairs for programming during an event.
 
 ## Use case
 
-A group of friends participate in a programming competition and want to work in pairs. This can happen as a fun way to practice on pair programming and also work with people you neven met before and exchange knowledge.
+A group of friends participate in a programming competition and want to work in pairs. This can happen as a fun way to practice on pair programming and also work with people you never met before and exchange knowledge. The task at hand should not be language specific (e.g. "Create a game", "Solve this problem", etc)
 
-The problem is that maybe of the people might meet for the first time and don't have the same background. They don't speak the same programming languages, at least not all of them.
+The problem is that these people might meet for the first time and don't have the same background. They don't speak the same programming languages, at least not all of them.
 
-This application can be fed the programming languages each person speaks and returns the maximum possible pairs. It is possible that some of the people can't be paired (see the rspec examples).
+This application can be fed the programming languages each person speaks return the maximum possible pairs. It is possible that some of the people can't be paired (see the rspec examples).
 
 ## How to use
 
